@@ -32,7 +32,6 @@ docker pull ghcr.io/ctfpilot/error-fallback:latest
 ## Pages
 
 Each page is generated from a file in [`src/content`](./src/content) (see [Development](#development) below) and is served as static HTML behind a reverse proxy. Which page is shown is determined by whichever HTTP status code the proxy maps to this service. Every page automatically polls the original request's host and reloads once it starts responding normally again, so the page updates on its own once the underlying issue is resolved.
-Screenshots below are available in both light and dark mode.
 
 | Page        | Title                  | Intended use                                                                       |
 | ----------- | ----------------------- | ------------------------------------------------------------------------------------- |
